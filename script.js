@@ -97,6 +97,8 @@ function restartGame() {
   initGame();
 }
 
+soundButton.textContent = '🔇 Som';
+
 function toggleSound() {
   if (isMusicPlaying) {
     bgMusic.pause();
