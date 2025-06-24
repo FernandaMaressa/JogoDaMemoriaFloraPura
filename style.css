@@ -7,7 +7,7 @@ body {
   background-color: #F8F5F0;
   background-size: cover;
   background-position: center;
-  overflow: hidden; /* 🔒 Sem rolagem durante o jogo */
+  overflow: hidden; 
 }
 
 .titulo-jogo {
@@ -15,4 +15,27 @@ body {
   color: #2e4d3b;
   margin-top: 20px;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  min-height: 100vh;
+  padding-bottom: 60px; 
+}
+
+.rodape {
+  height: 40px;
+  background-color: #A8B19E;
+  font-size: 0.85em;
+  color: #555;
+  text-align: center;
+  line-height: 40px;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
