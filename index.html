@@ -7,18 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
-  <h1 class="titulo-jogo">Jogo da Memória - Flora Pura</h1>
-  <div class="game-board" id="game-board"></div>
-  <div id="parabens" class="hidden">
-    <h2>Parabéns!</h2>
-     <p>Você completou o jogo da memória dos lançamentos da Flora Pura!<br>
-         Poste nos stories, marque @florapuraoficial e @fernanda.aals para participar do sorteio do Ômega 3!</p>
+  <div class="container">
+    <h1 class="titulo-jogo">Jogo da Memória - Flora Pura</h1>
+    
+    <div id="restart-container" class="hidden">
+      <button onclick="restartGame()" class="btn-restart">Jogar Novamente</button>
     </div>
-</div>
-<footer class="rodape">
-    © 2025 Flora Pura • Criado por Fernanda Antunes
-</footer>
+
+    <div class="game-board" id="game-board"></div>
+    
   <script src="script.js"></script>
 </body>
 </html>
