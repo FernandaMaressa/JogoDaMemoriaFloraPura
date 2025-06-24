@@ -52,6 +52,13 @@ body {
   transition: transform 0.5s;
 }
 
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 170px);  /* altera junto com o tamanho das cartas */
+  gap: 15px;   /* de 15px para 20px para mais respiro */
+  margin: 20px auto;
+}
+
 .card.flip {
   transform: rotateY(180deg);
 }
