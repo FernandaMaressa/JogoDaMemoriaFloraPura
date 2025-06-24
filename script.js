@@ -31,7 +31,7 @@ function createCard(src) {
 
   const back = document.createElement('div');
   back.classList.add('back');
-  back.style.backgroundImage = url('${src}');
+  back.style.backgroundImage = `url('${src}')`;
 
   card.appendChild(front);
   card.appendChild(back);
@@ -68,7 +68,6 @@ function checkMatch() {
         parabens.classList.remove('hidden');
         restartContainer.classList.remove('hidden');
 
-        // 🔓 ATIVA A ROLAGEM QUANDO APARECE PARABÉNS
         document.body.style.overflowY = 'auto';
       }, 500);
     }
@@ -76,6 +75,7 @@ function checkMatch() {
     flippedCards = [];
   }
 }
+
 
 function initGame() {
   const shuffled = shuffle([...cardsArray]);
@@ -91,7 +91,9 @@ function restartGame() {
   restartContainer.classList.add('hidden');
   matched = 0;
   flippedCards = [];
+
   document.body.style.overflow = 'hidden';
+
   initGame();
 }
 
