@@ -95,3 +95,15 @@ function restartGame() {
   initGame();
 }
 
+function toggleSound() {
+  if (isMusicPlaying) {
+    bgMusic.pause();
+    soundButton.textContent = '🔇 Som';
+  } else {
+    bgMusic.play();
+    soundButton.textContent = '🔊 Som';
+  }
+  isMusicPlaying = !isMusicPlaying;
+}
+
+initGame();
