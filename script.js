@@ -76,3 +76,13 @@ function checkMatch() {
     flippedCards = [];
   }
 }
+
+function initGame() {
+  const shuffled = shuffle([...cardsArray]);
+  shuffled.forEach(src => {
+    const card = createCard(src);
+    board.appendChild(card);
+  });
+}
+
+
