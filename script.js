@@ -17,3 +17,7 @@ const cardsArray = [
 
 let flippedCards = [];
 let matched = 0;
+
+function shuffle(array) {
+  return array.sort(() => 0.5 - Math.random());
+}
