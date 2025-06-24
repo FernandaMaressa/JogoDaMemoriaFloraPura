@@ -39,3 +39,24 @@ body {
   width: 100%;
   z-index: 1000;
 }
+
+.card {
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.matched {
+  box-shadow: 0 0 15px #4CAF50;
+  border: 3px solid #4CAF50;
+}
