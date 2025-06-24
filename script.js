@@ -85,4 +85,13 @@ function initGame() {
   });
 }
 
+function restartGame() {
+  board.innerHTML = '';
+  parabens.classList.add('hidden');
+  restartContainer.classList.add('hidden');
+  matched = 0;
+  flippedCards = [];
+  document.body.style.overflow = 'hidden';
+  initGame();
+}
 
