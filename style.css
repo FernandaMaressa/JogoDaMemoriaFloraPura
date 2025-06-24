@@ -143,3 +143,17 @@ body {
 #sound-button:hover {
   background-color: #8f9988;
 }
+
+.frutas-esquerda {
+  position: fixed;
+  left: 35px;
+  bottom: 70px;
+  width: 350px;
+}
+
+.logo-direita {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  width: clamp(200px, 3vw, 100px);;
+}
