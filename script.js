@@ -52,3 +52,27 @@ function createCard(src) {
 
   return card;
 }
+
+function checkMatch() {
+  const [card1, card2] = flippedCards;
+  const img1 = card1.querySelector('.back').style.backgroundImage;
+  const img2 = card2.querySelector('.back').style.backgroundImage;
+
+  if (img1 === img2) {
+    card1.classList.add('matched');
+    card2.classList.add('matched');
+    matched += 2;
+
+    if (matched === cardsArray.length) {
+      setTimeout(() => {
+        parabens.classList.remove('hidden');
+        restartContainer.classList.remove('hidden');
+
+        // 🔓 ATIVA A ROLAGEM QUANDO APARECE PARABÉNS
+        document.body.style.overflowY = 'auto';
+      }, 500);
+    }
+
+    flippedCards = [];
+  }
+}
