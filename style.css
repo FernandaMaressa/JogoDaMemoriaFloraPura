@@ -109,3 +109,21 @@ body {
 .hidden {
   display: none;
 }
+
+#restart-container {
+  margin: 10px 0;
+}
+
+.btn-restart {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-restart:hover {
+  background-color: #388e3c;
+}
